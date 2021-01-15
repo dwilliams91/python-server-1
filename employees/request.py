@@ -50,7 +50,7 @@ def get_all_employees():
     for row in dataset:
       employee= Employee(row['id'], row['name'], row['address'], row['location_id'])
     
-    employees.append(employee.__dict__)
+      employees.append(employee.__dict__)
     return json.dumps(employees)
 
 
