@@ -4,8 +4,8 @@ CREATE TABLE `Location` (
 	`address`	TEXT NOT NULL
 );
 
-CREATE TABLE "Customer" (
-    "id"    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+CREATE TABLE `Customer` (
+    `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     `name`    TEXT NOT NULL,
     `address`    TEXT NOT NULL,
     `email`    TEXT NOT NULL,
@@ -56,3 +56,15 @@ INSERT INTO `Animal` VALUES (null, "Jax", "Treatment", "Beagle", 1, 1);
 INSERT INTO `Animal` VALUES (null, "Falafel", "Treatment", "Siamese", 4, 2);
 INSERT INTO `Animal` VALUES (null, "Doodles", "Kennel", "Poodle", 3, 1);
 INSERT INTO `Animal` VALUES (null, "Daps", "Kennel", "Boxer", 2, 2);
+
+
+
+-- SELECT 
+-- 	a.name animal_name,
+-- 	c.name customer_name,
+-- 	l.name location_name
+-- FROM Animal a
+-- Join Customer c
+-- 	on a.customer_id=c.id
+-- join Location l
+-- 	on a.location_id= l.id;
