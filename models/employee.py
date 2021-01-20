@@ -5,4 +5,5 @@ class Employee:
         self.name = name
         self.animalId=animalId
         self.locationId=locationId
+        self.location= None
 
